@@ -1,0 +1,24 @@
+{
+    "ModTitle": "Shield Widget - PCO Compatibility",
+    "ModVersion": "0.1",
+    "ModAuthor": "RedRoryOTheGlen",
+    "ContactInfo": "rmufrancisco@gmail.com",
+    "DFUnity_Version": "1.1.1",
+    "ModDescription": "Compatibility patch to allow Shield Widget's Recoil feature to be used alongside Physical Combat and Armor Overhaul (PCO). This must be loaded AFTER the base mod and PCO.",
+    "GUID": "fc9369de-d108-4e64-ada8-355afd5d13d3",
+    "Files": [
+        "Assets/Game/Mods/ShieldWidget - PCO Patch/Scripts/ShieldWidgetPCO.cs"
+    ],
+    "Dependencies": [
+        {
+            "Name": "shield widget",
+            "IsOptional": false,
+            "IsPeer": false
+        },
+        {
+            "Name": "physicalcombatandarmoroverhaul",
+            "IsOptional": false,
+            "IsPeer": false
+        }
+    ]
+}

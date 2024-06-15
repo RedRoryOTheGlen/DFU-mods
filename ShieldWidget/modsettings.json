@@ -1,0 +1,251 @@
+{
+    "Version": "1.0",
+    "Sections": [
+        {
+            "Name": "Shield",
+            "Description": "Customize the shield sprite",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Min": 0.8,
+                    "Max": 1.2,
+                    "Value": 1.0,
+                    "Name": "Scale",
+                    "Description": "Size of the sprite",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": -1.0,
+                    "Max": 1.0,
+                    "Value": 0.0,
+                    "Name": "OffsetHorizontal",
+                    "Description": "Offsets the sprite relative to the left edge of the screen",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": -1.0,
+                    "Max": 1.0,
+                    "Value": 0.0,
+                    "Name": "OffsetVertical",
+                    "Description": "Offsets the sprite relative to the bottom edge of the screen",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "StanceSpeed",
+                    "Description": "Speed of stance transition when attacking",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Options": [
+                        "Hide",
+                        "Corner",
+                        "Ready"
+                    ],
+                    "Value": 1,
+                    "Name": "WhenSheathed",
+                    "Description": "The shield's behavior when sheathing your weapon",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.MultipleChoiceKey"
+                },
+                {
+                    "Options": [
+                        "Hide",
+                        "Corner",
+                        "Ready"
+                    ],
+                    "Value": 1,
+                    "Name": "WhenCasting",
+                    "Description": "The shield's behavior when readying or while casting a spell",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.MultipleChoiceKey"
+                }
+            ],
+            "$version": "v1"
+        },
+        {
+            "Name": "Bob",
+            "Description": "Offsets the shield sprite during movement",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Value": false,
+                    "Name": "EnableBob",
+                    "Description": "",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.ToggleKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "Length",
+                    "Description": "Amount of bobs in a single stride",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "SizeX",
+                    "Description": "Extent of horizontal movement when bobbing",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "SizeY",
+                    "Description": "Extent of vertical movement when bobbing",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "SpeedMove",
+                    "Description": "Speed of transition between stationary and moving",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "SpeedState",
+                    "Description": "Speed of transition between movement states",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Options": [
+                        "U",
+                        "Sideways 8",
+                        "Inverted U"
+                    ],
+                    "Value": 0,
+                    "Name": "Shape",
+                    "Description": "Shape of bob",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.MultipleChoiceKey"
+                },
+                {
+                    "Value": true,
+                    "Name": "BobWhileIdle",
+                    "Description": "Whether the shield will slightly bob while stationary",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.ToggleKey"
+                }
+            ],
+            "$version": "v1"
+        },
+        {
+            "Name": "Inertia",
+            "Description": "Delays the shield sprite on the screen when the view is manipulated.",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Value": false,
+                    "Name": "EnableInertia",
+                    "Description": null,
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.ToggleKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "Scale",
+                    "Description": "The maximum distance that the sprite will be offset",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "Speed",
+                    "Description": "The speed that the sprite will move at towards the target offset",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "ForwardDepth",
+                    "Description": "Multiplier for the change in scale when moving forward or backward",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "ForwardSpeed",
+                    "Description": "The speed that the sprite will scale towards the target depth",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                }
+            ],
+            "$version": "v1"
+        },
+        {
+            "Name": "Recoil",
+            "Description": "Simulates impacts on the shield when you are attacked. ACTIVATE ONLY DURING STARTUP MENU.",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Value": false,
+                    "Name": "EnableRecoil",
+                    "Description": null,
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.ToggleKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "Scale",
+                    "Description": "The amount the shield will recoil",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "Speed",
+                    "Description": "The speed that the shield recovers from recoil",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Options": [
+                        "Hit On Shield",
+                        "Miss On Shield",
+                        "Attack On Shield",
+                        "Any Hit",
+                        "Any Miss",
+                        "Any Attack"
+                    ],
+                    "Value": 2,
+                    "Name": "Condition",
+                    "Description": "Event required for the shield to recoil",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.MultipleChoiceKey"
+                }
+            ],
+            "$version": "v1"
+        }
+    ]
+}
