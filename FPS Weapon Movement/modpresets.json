@@ -1,0 +1,91 @@
+[
+    {
+        "Title": "Bob - Tall",
+        "Author": "RedRoryOTheGlen",
+        "Description": null,
+        "SettingsVersion": "0.1",
+        "Values": {
+            "Bob": {
+                "EnableBob": "True",
+                "SizeX": "0.5",
+                "SizeY": "1.5"
+            }
+        },
+        "$version": "v1"
+    },
+    {
+        "Title": "Bob - Medium",
+        "Author": "RedRoryOTheGlen",
+        "Description": null,
+        "SettingsVersion": "0.1",
+        "Values": {
+            "Bob": {
+                "EnableBob": "True",
+                "SizeX": "1",
+                "SizeY": "1"
+            }
+        },
+        "$version": "v1"
+    },
+    {
+        "Title": "Bob - Wide",
+        "Author": "RedRoryOTheGlen",
+        "Description": null,
+        "SettingsVersion": "0.1",
+        "Values": {
+            "Bob": {
+                "SizeX": "1.5",
+                "SizeY": "0.5"
+            }
+        },
+        "$version": "v1"
+    },
+    {
+        "Title": "Inertia - Light",
+        "Author": "RedRoryOTheGlen",
+        "Description": null,
+        "SettingsVersion": "0.1",
+        "Values": {
+            "Inertia": {
+                "EnableInertia": "True",
+                "Scale": "0.5",
+                "Speed": "1.5",
+                "ForwardDepth": "0.5",
+                "ForwardSpeed": "1.5"
+            }
+        },
+        "$version": "v1"
+    },
+    {
+        "Title": "Inertia - Medium",
+        "Author": "RedRoryOTheGlen",
+        "Description": null,
+        "SettingsVersion": "0.1",
+        "Values": {
+            "Inertia": {
+                "EnableInertia": "True",
+                "Scale": "1",
+                "Speed": "1",
+                "ForwardDepth": "1",
+                "ForwardSpeed": "1"
+            }
+        },
+        "$version": "v1"
+    },
+    {
+        "Title": "Inertia - Heavy",
+        "Author": "RedRoryOTheGlen",
+        "Description": null,
+        "SettingsVersion": "0.1",
+        "Values": {
+            "Inertia": {
+                "EnableInertia": "True",
+                "Scale": "1.5",
+                "Speed": "0.5",
+                "ForwardDepth": "1.5",
+                "ForwardSpeed": "0.5"
+            }
+        },
+        "$version": "v1"
+    }
+]

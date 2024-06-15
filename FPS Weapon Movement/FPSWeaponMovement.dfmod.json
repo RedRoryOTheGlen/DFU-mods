@@ -1,0 +1,13 @@
+{
+    "ModTitle": "FPS Weapon Movement",
+    "ModVersion": "0.1",
+    "ModAuthor": "RedRoryOTheGlen",
+    "ContactInfo": "rmufrancisco@gmail.com",
+    "DFUnity_Version": "1.1.0",
+    "ModDescription": "Adds variable bob and sway to the FPS Weapon graphics",
+    "GUID": "f8a5a69d-e607-4c5c-a187-707017c63535",
+    "Files": [
+        "Assets/Game/Mods/FPS Weapon Movement/Scripts/FPSWeaponMovement.cs",
+        "Assets/Game/Mods/FPS Weapon Movement/modsettings.json"
+    ]
+}
