@@ -1,0 +1,278 @@
+{
+    "Version": null,
+    "Sections": [
+        {
+            "Name": "Activation",
+            "Description": "Configure when to start acquiring a target",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Options": [
+                        "On Swing Weapon (For vanilla weapon controls)",
+                        "On Dedicated Input"
+                    ],
+                    "Value": 1,
+                    "Name": "Condition",
+                    "Description": "",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.MultipleChoiceKey"
+                },
+                {
+                    "Value": "Tab",
+                    "Name": "Input",
+                    "Description": "Key used to toggle auto-sight in Dedicated Input",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.TextKey"
+                },
+                {
+                    "Value": {
+                        "First": 0.25,
+                        "Second": 0.75
+                    },
+                    "Name": "InputThreshold",
+                    "Description": "Amount of input required to begin or end auto-sighting",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.TupleFloatKey"
+                }
+            ],
+            "$version": "v1"
+        },
+        {
+            "Name": "View",
+            "Description": "Configure camera behavior when a target is acquired",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Min": 1,
+                    "Max": 10,
+                    "Value": 5,
+                    "Name": "Speed",
+                    "Description": "The maximum speed of the auto-sighting",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderIntKey"
+                },
+                {
+                    "Min": 1,
+                    "Max": 50,
+                    "Value": 25,
+                    "Name": "Softzone",
+                    "Description": "Angle threshold for dampening speed based on FOV.",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderIntKey"
+                },
+                {
+                    "Options": [
+                        "Disabled",
+                        "Break when out of bounds",
+                        "Never break"
+                    ],
+                    "Value": 0,
+                    "Name": "OffsetAimpoint",
+                    "Description": "Allows camera control to offset the aimpoint when using Dedicated Input",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.MultipleChoiceKey"
+                }
+            ],
+            "$version": "v1"
+        },
+        {
+            "Name": "Targeting",
+            "Description": "Configure the ease of acquiring a target",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Min": 1,
+                    "Max": 100,
+                    "Value": 50,
+                    "Name": "Range",
+                    "Description": "Distance threshold for valid targets",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderIntKey"
+                },
+                {
+                    "Min": 1,
+                    "Max": 100,
+                    "Value": 50,
+                    "Name": "Radius",
+                    "Description": "Angle threshold for valid targets based on FOV",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderIntKey"
+                },
+                {
+                    "Min": 1,
+                    "Max": 4,
+                    "Value": 2,
+                    "Name": "Interval",
+                    "Description": "Time between updates when seeking a target. Multiple of 0.0625s",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderIntKey"
+                }
+            ],
+            "$version": "v1"
+        },
+        {
+            "Name": "Quickturn",
+            "Description": "Configure the use of the quickturn module",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Value": false,
+                    "Name": "Enable",
+                    "Description": null,
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.ToggleKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "Duration",
+                    "Description": "Time in seconds to turn a full 180 degrees",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Options": [
+                        "Key",
+                        "Double-Tap"
+                    ],
+                    "Value": 0,
+                    "Name": "InputMode",
+                    "Description": null,
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.MultipleChoiceKey"
+                },
+                {
+                    "Value": "LeftShift",
+                    "Name": "KeyInput",
+                    "Description": "Key for enabling quickturn inputs",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.TextKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 1.0,
+                    "Value": 0.2,
+                    "Name": "TapTime",
+                    "Description": "Duration for double-tap inputs",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                }
+            ],
+            "$version": "v1"
+        },
+        {
+            "Name": "Autopitch",
+            "Description": "Have the camera automatically pitch up and down on slopes and stairs",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Value": false,
+                    "Name": "Enable",
+                    "Description": null,
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.ToggleKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 1.0,
+                    "Value": 0.5,
+                    "Name": "Threshold",
+                    "Description": "Amount of manual pitch movement that disables autopitch",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 5.0,
+                    "Value": 2.5,
+                    "Name": "Time",
+                    "Description": "Idle time before autopitch is enabled",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.1,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "Speed",
+                    "Description": "Speed of autopitch",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 1.0,
+                    "Value": 0.5,
+                    "Name": "Strength",
+                    "Description": "Final pitch angle as a fraction of true detected angle",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Min": -45.0,
+                    "Max": 45.0,
+                    "Value": 0.0,
+                    "Name": "Offset",
+                    "Description": "Adjusts the resting angle of autopitch in degrees",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                }
+            ],
+            "$version": "v1"
+        },
+        {
+            "Name": "Feedback",
+            "Description": "Toggle state messages",
+            "IsAdvanced": false,
+            "Keys": [
+                {
+                    "Value": true,
+                    "Name": "OnTargetAcquired",
+                    "Description": "Show a message when a target is acquired",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.ToggleKey"
+                },
+                {
+                    "Options": [
+                        "None",
+                        "Widget",
+                        "Crosshair"
+                    ],
+                    "Value": 1,
+                    "Name": "Indicator",
+                    "Description": "Show an icon indicating the status of auto-sight",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.MultipleChoiceKey"
+                },
+                {
+                    "Value": {
+                        "First": 0.5,
+                        "Second": 0.8
+                    },
+                    "Name": "WidgetOffset",
+                    "Description": "Position of the widget relative to the bottom-left corner of the screen",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.TupleFloatKey"
+                },
+                {
+                    "Min": 0.0,
+                    "Max": 2.0,
+                    "Value": 1.0,
+                    "Name": "WidgetScale",
+                    "Description": "Size of the widget",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.SliderFloatKey"
+                },
+                {
+                    "Value": true,
+                    "Name": "OnQuickturn",
+                    "Description": "Show a message when a quickturn is performed",
+                    "$version": "v1",
+                    "$type": "DaggerfallWorkshop.Game.Utility.ModSupport.ModSettings.ToggleKey"
+                }
+            ],
+            "$version": "v1"
+        }
+    ]
+}

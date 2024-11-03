@@ -1,0 +1,18 @@
+{
+    "ModTitle": "Auto-Sight",
+    "ModVersion": "1.2.5",
+    "ModAuthor": "RedRoryOTheGlen",
+    "ContactInfo": "rmufrancisco@gmail.com",
+    "DFUnity_Version": "1.1.1",
+    "ModDescription": "Adds lock-on targeting to DFU.",
+    "GUID": "79250d07-8f17-4681-8621-7c4a3435e41e",
+    "Files": [
+        "Assets/Game/Mods/AutoSight/Scripts/AutoSight.cs",
+        "Assets/Game/Mods/AutoSight/modsettings.json",
+        "Assets/Game/Mods/AutoSight/Textures/500_0-2.png",
+        "Assets/Game/Mods/AutoSight/Textures/500_0-1.png",
+        "Assets/Game/Mods/AutoSight/Textures/500_0-0.png",
+        "Assets/Game/Mods/AutoSight/Textures/500_0-3.png",
+        "Assets/Game/Mods/AutoSight/Textures/500_0-4.png"
+    ]
+}
