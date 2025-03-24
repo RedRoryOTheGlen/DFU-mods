@@ -1,0 +1,12 @@
+{
+    "ModTitle": "Fast Travel Encounters",
+    "ModVersion": "0.1",
+    "ModAuthor": "RedRoryOTheGlen",
+    "ContactInfo": "rmufrancisco@gmail.com",
+    "DFUnity_Version": "1.1.1",
+    "ModDescription": "Interrupts vanilla fast travel with encounters!",
+    "GUID": "752d9c05-234c-4e88-9b77-ec6a6bca1863",
+    "Files": [
+        "Assets/Game/Mods/FastTravelEncounters/Scripts/FastTravelEncounters.cs"
+    ]
+}
